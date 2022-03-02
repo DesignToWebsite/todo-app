@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+button{
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    padding-top:5rem;
+    font-size: 4rem;
+    font-weight : bolder;
+}
+form.input{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top : 5rem;
+}
+.input-todo{
+    background-color:white;
+    width: 350px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+}
+.input-todo input{
+    width: 85%;
+    background-color: white;
+    border: none;
+    padding: 15px;
+}
+.input-todo button{
+    background-color: white;
+    border: none !important;
+    width: 15%;
+    cursor: pointer;
+    color: #e06341;
+    font-size:2.3em;
+    transition: all 0.3s ease;
+}
+
+.input-todo button:hover{
+    background-color: #e06341;
+    color: white;
+
+}
+
+select {
+    border: none;
+    margin-left: 1rem;
+    background-color:white;
+    width:150px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color : #e06341;
+    font-weight:bold;
+}
+ 
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top : 5rem;
+}
+.item{
+    background : white;
+    width: 400px;
+    height: 50px;
+    margin: 10px; 
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+    color : black;
+}
+.item span{
+    width: 70%;
+}
+.item  button{
+    border: none;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    color : white;
+    width: 15%;
+}
+.completed{
+    background:rgb(11, 212, 162);
+}
+.delete{
+    background: #e06341;
+}
+.transparent{
+    opacity:0.5;
+    text-decoration: line-through;
+}
+
+/*****pointer events*******/
+.fa-trash,.fa-check{
+    pointer-events:none;
+}
+/***animation btn****/
+.list ul li{
+    transition: all 0.7s ease;
+    
+}
+.transitionList{
+    transform: rotate(15deg) translate(-10px,100px);
+    opacity: 0;
+}
